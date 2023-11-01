@@ -15,3 +15,5 @@ router.get("/:id", (req, res) => {
     const foundVideo = parsedVideos.find(video => video.id === req.params.id)
     res.json(foundVideo);
   });
+
+  module.exports = router;
