@@ -16,7 +16,7 @@ router.get("/:id", (req, res) => {
     res.json(foundVideo);
   });
 router.post("/", (req, res) => {
-    console.log(req.body)
+  
     const newVideo = {
       id: uuid(),
       title: req.body.title,
@@ -30,7 +30,12 @@ router.post("/", (req, res) => {
       timestamp: new Date().getTime(),
       comments: []
     }
+     const videoJson = fs.readFileSync("./data/videos.json")
+     const parsedVideosData = JSON.parse(videoJson)
+     const newVideosData = [
+        ...parsedVideosData, newVideo
+     ]
+     fs.writeFileSync("./data/videos.json", JSON.stringify(newVideosData))
     
-    console.log(newVideo)
 })
   module.exports = router;
