@@ -301,16 +301,42 @@
     ]
   },
   {
-    "id": "cc576cdb-ad3b-4701-8f65-6afc9abdc0a4",
-    "title": "Bike",
+    "id": "8c29e878-571b-429a-a980-7d3de8273ade",
+    "title": "Kalgi is amazing!",
     "channel": "Unique",
-    "image": "http://localhost:8080/images/Upload-video-preview.jpg",
-    "description": "It was an amazing ride!",
+    "image": "http://localhost:8080/images/Kalgi.jpeg",
+    "description": "I'm so happy to call her my friend.",
     "views": "0",
     "likes": "0",
     "duration": "4:01",
     "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1698962122460,
+    "timestamp": 1699061639562,
+    "comments": []
+  },
+  {
+    "id": "629eb309-2a59-47d8-a559-1d44fe4c25ba",
+    "title": "Brett is my twin!",
+    "channel": "Unique",
+    "image": "http://localhost:8080/images/Brett.jpeg",
+    "description": "We're so like minded and emotional lol",
+    "views": "0",
+    "likes": "0",
+    "duration": "4:01",
+    "video": "https://project-2-api.herokuapp.com/stream",
+    "timestamp": 1699061745668,
+    "comments": []
+  },
+  {
+    "id": "38009b71-c6f2-4909-a85e-782315cf2cbd",
+    "title": "No one makes me laugh as much as Seb!!",
+    "channel": "Unique",
+    "image": "http://localhost:8080/images/Bash.jpeg",
+    "description": "",
+    "views": "0",
+    "likes": "0",
+    "duration": "4:01",
+    "video": "https://project-2-api.herokuapp.com/stream",
+    "timestamp": 1699062447017,
     "comments": []
   }
 ]
