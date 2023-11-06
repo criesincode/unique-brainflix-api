@@ -21,7 +21,7 @@ router.post("/", (req, res) => {
       id: uuid(),
       title: req.body.title,
       channel: "Unique",
-      image: "./public/images/" + req.body.image,
+      image: "http://localhost:8080/images/Upload-video-preview.jpeg",
       description: req.body.description,
       views: "0",
       likes: "0",
@@ -36,6 +36,6 @@ router.post("/", (req, res) => {
         ...parsedVideosData, newVideo
      ]
      fs.writeFileSync("./data/videos.json", JSON.stringify(newVideosData))
-    
+    res.status(201).json(newVideo)
 })
   module.exports = router;
